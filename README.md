@@ -1,3 +1,3 @@
 # app-uber-clone
 
-![alt text](https://ibb.co/HXs0nzm)
+![alt text](https://i.ibb.co/DLyN5C3/uber-clone.jpg)
