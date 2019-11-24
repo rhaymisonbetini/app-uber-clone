@@ -18,3 +18,27 @@ Após gerar a chave no arquivo config.xml voce deve inserir suas chaves no techo
     <preference name="GOOGLE_MAPS_IOS_API_KEY" value="" />
 </widget>
 ```
+Na home page.ts seu arquivo deve conter a chave tambem no trecho de código abaixo:
+
+```
+
+    Environment.setEnv({
+      API_KEY_FOR_BROWSER_RELEASE: '',
+      API_KEY_FOR_BROWSER_DEBUG: ''
+    });
+
+```
+
+Após esse procedimento basta rodar o comando: ```npm install `` e na sequencia dar build com o ```Ionic cordova build android```.
+
+Será gerado um APK que bastando apenas passar para o dispositivo mobile já estara pronto para uso.
+
+# Tecnologias usadas
+
+- IONIC 4
+- ANGULAR 8 
+- API GOOGLE MAPS IONIC NATIVE ( @ionic-native/google-maps document )
+
+# Desenvolvedor
+
+- Cristian Heleno de Oliveira
