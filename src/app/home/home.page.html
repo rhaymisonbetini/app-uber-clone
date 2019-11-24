@@ -1,5 +1,43 @@
 <ion-content>
   <div #map>
-    <ion-searchbar Placeholder="Para onde?" (ionChange)="onSearchChange($event)"></ion-searchbar>
+    <ion-searchbar Placeholder="Para onde?" [(ngModel)]="search" (ionChange)="onSearchChange()" [hidden]="destination">
+    </ion-searchbar>
+    <ion-button (click)="onBack()" class="ion-margin-top" color="dark" fill="clear" size="samll"
+      [hidden]="!destination">
+      <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+    </ion-button>
+    <ion-list [hidden]=" !search.length" class="ion-margin-horizontal">
+      <ion-item *ngFor="let result of searchResults" (click)="onCalcRoute(result)">
+        {{result.description}}
+      </ion-item>
+    </ion-list>
+
+    <div class="request-car ion-padding ion-text-center" [hidden]="!destination">
+      <h4 class="ion-no-margin">Cristian Driver</h4>
+      <span>Viagens baratas</span>
+
+      <ion-grid class="ion-margin-vertical">
+        <ion-row>
+          <ion-col size="4">
+            <img src="https://via.placeholder.com/65/cccccc">
+            <span class="category">CristianX</span>
+            <span>R$12,00 Guedes</span>
+          </ion-col>
+          <ion-col size="4">
+            <img src="https://via.placeholder.com/65/cccccc">
+            <span class="category">Cristian Select</span>
+            <span>R$17,50 Bonoros</span>
+          </ion-col>
+          <ion-col size="4">
+            <img src="https://via.placeholder.com/65/cccccc">
+            <span class="category">Cristian Black</span>
+            <span>R$35,00 Guedes</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-button color="dark" expand="block">
+        Confirmar Cristian Driver
+      </ion-button>
+    </div>
   </div>
 </ion-content>
