@@ -29,7 +29,7 @@ Na home page.ts seu arquivo deve conter a chave tambem no trecho de código abai
 
 ```
 
-Após esse procedimento basta rodar o comando: ```npm install `` e na sequencia dar build com o ```Ionic cordova build android```.
+Após esse procedimento basta rodar o comando: ```npm install ``` e na sequencia dar build com o ```Ionic cordova build android```.
 
 Será gerado um APK que bastando apenas passar para o dispositivo mobile já estara pronto para uso.
 
