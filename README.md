@@ -33,6 +33,9 @@ Após esse procedimento basta rodar o comando: ```npm install ``` e na sequencia
 
 Será gerado um APK que bastando apenas passar para o dispositivo mobile já estara pronto para uso.
 
+Caso queira rodar a aplicação no proprio navegador basta rodar primeiramente o comando:
+``` ionic cordova platform add browser``` e nada sequência rodar  ``` ionic cordova run browser ```
+
 # Tecnologias usadas
 
 - IONIC 4
